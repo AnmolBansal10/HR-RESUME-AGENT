@@ -17,7 +17,29 @@ hr_agent/
 ├── requirements.txt
 └── HR_Agent_Streamlit_Colab.ipynb
 ```
+## Quickstart - Google Colab
 
+### Step 0 - Add API Keys to Colab Secrets (one-time setup)
+1. Click the **🔑 key icon** in the left sidebar of Colab to open Secrets.
+2. Add the following two secrets and toggle **Notebook access ON** for both:
+   - `GEMINI_API_KEY`: Get your free key from [Google AI Studio](https://aistudio.google.com/app/apikey).
+   - `NGROK_TOKEN`: Get your free auth token from your [ngrok dashboard](https://dashboard.ngrok.com/get-started/your-authtoken).
+
+### Step 1 - Run notebook cells in order
+- **Cell 1** -> Install required packages (including pyngrok)
+- **Cell 2** -> Load and verify `GEMINI_API_KEY` and `NGROK_TOKEN`
+- **Cell 3** -> Upload `hr_streamlit.zip` and extract
+- **Cell 4b** -> Verify source files
+- **Cell 5** -> Launch Streamlit & open ngrok tunnel
+- **Cell 6** -> Stop server / kill tunnel
+- **Cell 7** -> View error logs
+- **Cell 8** -> Download the SQLite database (`hr_agent.db`)
+
+### Step 2 - Open the app
+Once Cell 5 successfully runs, it will print an output like this:
+```text
+🚀  HR Resume Shortlisting Agent is LIVE!
+🌐  URL: [https://xxxx-xx-xx-xx-xx.ngrok-free.app](https://xxxx-xx-xx-xx-xx.ngrok-free.app)
 
 ### Step 1 - Run notebook cells in order
 
