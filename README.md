@@ -15,7 +15,6 @@ hr_agent/
 ├── llm_service.py          <- Gemini API calls + structured prompts
 ├── evaluation_service.py   <- Orchestration pipeline
 ├── requirements.txt
-├── .env.example
 └── HR_Agent_Streamlit_Colab.ipynb
 ```
 
