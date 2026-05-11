@@ -103,7 +103,7 @@ Weighted total out of 100:
 | Threat                  | Control                                                    |
 |-------------------------|------------------------------------------------------------|
 | Prompt injection        | Resume text wrapped as PASSIVE DATA in every LLM call      |
-| API key exposure        | Loaded from Secrets/env only, never written to disk        |
+| API key exposure        | never written to disk        |
 | PII in database         | Email + phone masked before any DB write                   |
 | Malicious uploads       | Extension whitelist (PDF/DOCX), size limit enforced        |
 | LLM bad output          | Pydantic validation, retry once, conservative fallback     |
